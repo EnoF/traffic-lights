@@ -1,0 +1,12 @@
+version: "2"
+services:
+  traffic:
+    build:
+      context: .
+      args:
+        - noproxy=${no_proxy}
+        - proxy=${http_proxy}
+    volumes:
+      - ./src:/usr/src/src
+      - ./test:/usr/src/test
+    command: npm test

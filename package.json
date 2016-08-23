@@ -1,0 +1,26 @@
+{
+  "name": "traffic-lights",
+  "version": "1.0.0",
+  "description": "traffic lights app for unit test training",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha -w --compilers js:babel-core/register"
+  },
+  "keywords": [
+    "mocha",
+    "chai",
+    "sinon",
+    "unit",
+    "test",
+    "training"
+  ],
+  "author": "Andy Tang <andyt@live.nl>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.11.5",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "sinon-chai": "^2.8.0"
+  }
+}
