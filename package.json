@@ -21,6 +21,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.11.5",
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
+    "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0"
   }
 }
