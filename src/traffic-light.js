@@ -13,7 +13,7 @@ export class TrafficLight {
     this.color = COLORS.RED;
   }
 
-  start() {
+  go() {
     this.color = COLORS.GREEN;
   }
 }

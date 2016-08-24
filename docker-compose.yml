@@ -6,6 +6,7 @@ services:
       args:
         - noproxy=${no_proxy}
         - proxy=${http_proxy}
+    image: enof/traffic-lights
     volumes:
       - ./src:/usr/src/src
       - ./test:/usr/src/test
