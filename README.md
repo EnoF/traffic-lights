@@ -13,3 +13,6 @@ We'll start off simple and write some tests for the behavior of an single traffi
 
 ### Plain single test
 Follow the exercise instructions [here](./exercises/exercise-one.md).
+
+### Organizing tests
+Follow the exercise instructions [here](./exercises/exercise-two.md).
