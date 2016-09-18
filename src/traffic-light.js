@@ -10,10 +10,20 @@ export class TrafficLight {
   }
 
   stop() {
-    this.color = COLORS.RED;
+    return this.hasTheLastCarPassed()
+      .then(() => this.color = COLORS.RED);
   }
 
   go() {
     setTimeout(() => this.color = COLORS.GREEN, 10000);
+  }
+
+  hasTheLastCarPassed() {
+    // This simulates a server call
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve();
+      }, 0);
+    });
   }
 }
