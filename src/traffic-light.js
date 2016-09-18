@@ -14,6 +14,6 @@ export class TrafficLight {
   }
 
   go() {
-    this.color = COLORS.GREEN;
+    setTimeout(() => this.color = COLORS.GREEN, 10000);
   }
 }
