@@ -50,6 +50,7 @@ describe('Traffic Lights', () => {
   describe('When the green light has been on for 10 seconds', () => {
     before(() => {
       // Move the setup code here
+      trafficLight.color = COLORS.GREEN;
       trafficLight.stop();
     });
 
