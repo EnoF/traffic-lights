@@ -47,15 +47,16 @@ describe('Traffic Lights', () => {
     });
   });
 
-  describe('When the green light has been on for 10 seconds', () => {
-    before(() => {
-      // Move the setup code here
-      trafficLight.color = COLORS.GREEN;
-      trafficLight.stop();
-    });
+  describe('When turning the traffic lights to `RED`', () => {
+    describe('And the last car has passed', () => {
+      before(() => {
+        trafficLight.color = COLORS.GREEN;
+        return trafficLight.stop();
+      });
 
-    it('should turn the traffic lights to red', () => {
-      expect(trafficLight.color).to.equal(COLORS.RED);
+      it('should turn the traffic light to `RED`', () => {
+        expect(trafficLight.color).to.equal(COLORS.RED);
+      });
     });
   });
 });
